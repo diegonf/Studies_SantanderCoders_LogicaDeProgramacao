@@ -1,0 +1,1 @@
+sorteio.sort((a, b) => a - b)
