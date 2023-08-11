@@ -76,7 +76,10 @@ const alunosMenoresQue20 = alunos.filter(aluno => aluno.idade < 20);
 console.log('Alunos com idade menor que 20 anos: ', alunosMenoresQue20);
 
 const alunosComJ = alunos.filter(aluno => aluno.nome[0] === 'J');
+// const alunosComJ = alunos.filter(aluno => aluno.nome.startsWith('J')); // outra forma
+// const alunosComJ = alunos.filter(aluno => aluno.nome.charAt(0) === 'J'); / outra forma
 console.log('Alunos com nome inciando com "J": ', alunosComJ);
+return;
 
 // find
 console.clear();
@@ -177,16 +180,17 @@ const atletas = [
 console.log('atletas original: ', atletas);
 console.log('atletas ordem crescente peso: ', atletas.sort((a, b) => a.peso - b.peso));
 console.log('atletas ordem decrescente altura: ', atletas.sort((a, b) => b.altura - a.altura));
-console.log('atletas ordem alfabética nome: ', atletas.sort((a, b) => {
-  const nameA = a.nome.toUpperCase(); // ignore upper and lowercase
-  const nameB = b.nome.toUpperCase(); // ignore upper and lowercase
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
+console.log('atletas ordem alfabética nome: ', atletas.sort((a, b) => a.nome.localeCompare(b.nome)));
+// console.log('atletas ordem alfabética nome: ', atletas.sort((a, b) => {
+//   const nameA = a.nome.toUpperCase(); // ignore upper and lowercase
+//   const nameB = b.nome.toUpperCase(); // ignore upper and lowercase
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
 
-  // names must be equal
-  return 0;
-}));
+//   // names must be equal
+//   return 0;
+// }));
