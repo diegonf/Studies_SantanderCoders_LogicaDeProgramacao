@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "João Cleber",
+    "email": "joao@gmail.com",
+    "subscribed": true
+  },
+  {
+    "id": 2,
+    "nome": "José Sarney",
+    "email": "jose@gmail.com",
+    "subscribed": false
+  },
+  {
+    "id": 3,
+    "nome": "Maria Gadú",
+    "email": "maria@gmail.com",
+    "subscribed": true
+  },
+  {
+    "id": 4,
+    "nome": "Leticia Spiller",
+    "email": "leticia@gmail.com",
+    "subscribed": true
+  },
+  {
+    "id": 5,
+    "nome": "Joaquim Huck",
+    "email": "joaquim@gmail.com",
+    "subscribed": false
+  }
+]
